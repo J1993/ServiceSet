@@ -8,9 +8,8 @@
 
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="assets/css/login.css" type="text/css">
-
         <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/login-style.css">
         
     </head>
     <body>
@@ -24,7 +23,55 @@
                     
                 </div>
             </div>
-            <div class="col s6">Hola Papi, como esta?</div>
+            <div class="col s6 center-align container">
+
+                <h1>Login</h1>
+
+                <p>Log in into your account or create a new account</p>
+
+                <form class="col s12">
+
+                        <div class="row">
+
+                           <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">E-mail</label>
+                           </div>
+
+                           <div class="input-field col s12">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                           </div>
+
+
+                           <div class="col s8">
+                              <p class="left-align">
+                                 <label>
+                                    <input type="checkbox" />
+                                    <span>Remember me</span>
+                                 </label>
+                              </p>
+                           </div>
+                           
+                           <div class="col s4 valign-wrapper" id="forgot-password">
+                              <a href="#">Forgot password?</a>
+                           </div>
+
+                           <div class="col s6 left-align">
+
+                              <a href="register.php" class="black-text">Create account</a>
+
+                           </div>
+
+                           <div class="col s6 right-align">
+                              <button class="btn waves-effect waves-light black" type="submit" name="action">Log in
+                              </button>
+                           </div>
+
+                        </div>
+
+                </form>
+            </div>
         </div>
 
         

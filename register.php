@@ -6,46 +6,78 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Register - ServiceSet</title>
 
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/register-style.css">
+        
     </head>
     <body>
-        <div id="login">
-            <h3 class="text-center text-white pt-5">Register form</h3>
-            <div class="container">
-                <div id="login-row" class="row justify-content-center align-items-center">
-                    <div id="login-column" class="col-md-6">
-                        <div id="login-box" class="col-md-12">
-                            <form id="login-form" class="form" action="" method="post">
-                                <h3 class="text-center text-info">Register here</h3>
-                                <div class="form-group">
-                                    <label for="username" class="text-info">Username:</label><br>
-                                    <input type="text" name="username" id="username" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="lastName" class="text-info">Last name:</label><br>
-                                    <input type="text" name="lastName" id="lastName" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="text-info">Email:</label><br>
-                                    <input type="text" name="email" id="email" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="text-info">Password:</label><br>
-                                    <input type="text" name="password" id="password" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
-                                </div>
-                                <div id="register-link" class="text-right">
-                                    <a href="#" class="text-info">Register here</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+
+        <div class="row">
+            <div class="col s6 valign-wrapper">
+                <div class="logo">
+                    
+                    <h2 class="center-align">ServiceSet</h2>
+                    <h3>Here is where everything starts</h3>
+                    
                 </div>
             </div>
+            <div class="col s6 center-align container">
+
+                <h1>Register</h1>
+
+                <p>Fill all the gaps to create a new account</p>
+
+                <form class="col s12">
+
+                        <div class="row">
+
+
+                           <div class="input-field col s6">
+                              <input id="first_name" type="text" class="validate">
+                              <label for="first_name">First Name</label>
+                           </div>
+
+                           <div class="input-field col s6">
+                              <input id="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                           </div>
+
+                           <div class="input-field col s12">
+                              <input id="email" type="email" class="validate">
+                              <label for="email">E-mail</label>
+                           </div>
+
+                           <div class="input-field col s6">
+                              <input id="password" type="password" class="validate">
+                              <label for="password">Password</label>
+                           </div>
+
+                           <div class="input-field col s6">
+                              <input id="confirm-password" type="password" class="validate">
+                              <label for="confirm-password">Confirm password</label>
+                           </div>
+
+                           <div class="col s6 left-align">
+
+                              <a href="login.php" class="black-text">or Log in</a>
+
+                           </div>
+
+                           <div class="col s6 right-align">
+                              <button class="btn waves-effect waves-light black" type="submit" name="action">Log in
+                              </button>
+                           </div>
+
+                        </div>
+
+                </form>
+            </div>
         </div>
+
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </body>
 </html>
