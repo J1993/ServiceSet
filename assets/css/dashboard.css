@@ -1,0 +1,9 @@
+.container-fluid {
+    margin-top: 40px;
+}
+
+.row > nav {
+    background-color: #383c41;
+    height: 100%;
+    position: fixed;
+}
