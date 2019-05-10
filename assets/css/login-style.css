@@ -2,10 +2,25 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+/*Form style START*/
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
 #forgot-password {
     height: 53px;
+}
+
+#forgot-password > a {
+    color: gray;
 }
 
 #create-account {
     height: 36px;
 }
+
+#create-account > a {
+    font-weight: 550;
+}
+/*Form style END*/
