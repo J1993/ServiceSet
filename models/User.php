@@ -8,7 +8,7 @@ class User extends BaseModel {
     public $email;
     public $password;
 
-    public function__construct() {
+    public function __construct() {
         parent::__construct();
     }
 
@@ -43,6 +43,8 @@ class User extends BaseModel {
     }
 
     function registerUser($data) {
+        $baseModel = new BaseModel();
+        $insert = $baseModel->insert('users', $data);
 
     }
 

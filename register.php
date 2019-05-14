@@ -2,12 +2,25 @@
 
    require_once 'controllers/UserController.php';
 
-   $user = new UserController();
-   $user -> register();
+   $userController = new UserController();
+   $userController -> register();
 
    #session_start();
    #$_SESSION['variable'] = 'data';
    #session_destroy();
+
+   if (isset($_POST['register'])) {
+
+      $data = array (
+         'user_name' => $_POST['firstName'],
+         'user_lastName' => $_POST['lastName'],
+         'user_email' => $_POST['email'],
+         'user_password' => md5($_POST['password']),
+      );
+      
+      $userController-> registerUser($data);
+      #var_dump($data);
+   }
 
 ?>
 
@@ -29,44 +42,42 @@
 
                <p>Fill all the gaps to create a new account</p>
 
-               <form class="col s12">
+               <form action="#" method="POST" name="registerForm" id="registerForm" class="col s12">
 
                      <div class="row">
 
 
                         <div class="input-field col s6">
-                           <input id="first_name" type="text" class="validate">
+                           <input id="first_name" name="firstName" type="text" class="validate" required>
                            <label for="first_name">First Name</label>
                         </div>
 
                         <div class="input-field col s6">
-                           <input id="last_name" type="text" class="validate">
+                           <input id="last_name" name="lastName" type="text" class="validate" required>
                            <label for="last_name">Last Name</label>
                         </div>
 
                         <div class="input-field col s12">
-                           <input id="email" type="email" class="validate">
+                           <input id="email" name="email" type="email" class="validate" required>
                            <label for="email">E-mail</label>
                         </div>
 
                         <div class="input-field col s6">
-                           <input id="password" type="password" class="validate">
+                           <input id="password" name="password" type="password" class="validate" required>
                            <label for="password">Password</label>
                         </div>
 
                         <div class="input-field col s6">
-                           <input id="confirm-password" type="password" class="validate">
+                           <input id="confirm-password" name="confirmPassword" type="password" class="validate" required>
                            <label for="confirm-password">Confirm password</label>
                         </div>
 
                         <div class="col s6 left-align">
-
                            <a href="login.php" class="black-text">or Log in</a>
-
                         </div>
 
                         <div class="col s6 right-align">
-                           <button class="btn waves-effect waves-light black" type="submit" name="action">Log in
+                           <button id="register" class="btn waves-effect waves-light black" type="submit" name="register">Register
                            </button>
                         </div>
 

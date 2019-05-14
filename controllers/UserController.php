@@ -4,6 +4,7 @@
 
     class UserController {
 
+
         public function register (){
 
             require_once('./views/includes/header.php');
@@ -13,6 +14,13 @@
 
         public function registerUser($data) {
 
+            if (!isset($data['email'])) {
+                 $errors = "";
+
+            }
+
+            $userModel = new User();   
+            $userModel->registerUser($data);
         }
     }
 
