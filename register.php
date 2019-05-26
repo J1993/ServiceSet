@@ -88,6 +88,14 @@
                </form>
          </div>
       </div>
+
+      <?php
+         if (isset($_SESSION['message'])) {
+            echo '<div class="col s12 center-align container"><h5>'.$_SESSION["message"].'</h5></div>';
+
+         }
+      ?>
+   
    </div>
    
    <!-- Compiled and minified JavaScript -->
