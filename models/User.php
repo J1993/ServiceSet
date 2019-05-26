@@ -46,6 +46,10 @@ class User extends BaseModel {
         $baseModel = new BaseModel();
         $insert = $baseModel->insert('users', $data);
 
+        if ($insert == true) {
+            $_SESSION['message'] = 'Registration successful';
+        }
+
     }
 
     public function accessUser($email, $password) {
