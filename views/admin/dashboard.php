@@ -10,16 +10,36 @@
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
             <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto" rel="stylesheet">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <link rel="stylesheet" href="assets/css/register-style.css">
+            <link rel="stylesheet" href="./assets/css/dashboard-style.css" type="txt/css">
+
+            <style>
+                nav {
+                    background-color: black;
+                    color: white;
+                }
+
+                .searchNavBar {
+                    display: inline-block;
+                    box-sizing: border-box;
+                    margin-left: 20%;
+                }
+            </style>
     </head>
     <body>
         
         <nav>
             <div class="nav-wrapper">
-                <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+                <a href="#!" class="brand-logo"><i class="material-icons sidenav-trigger" data-target="slide-out">menu</i>ServiceSet</a>
+                
+                <form class="searchNavBar">
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+                
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="sass.html"><i class="material-icons">search</i></a></li>
-                    <li><a href="badges.html"><i class="material-icons">view_module</i></a></li>
                     <li><a href="collapsible.html"><i class="material-icons">refresh</i></a></li>
                     <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li>
                 </ul>
@@ -28,12 +48,12 @@
 
         <ul id="slide-out" class="sidenav">
             <li><div class="user-view">
-                <div class="background">
-                <img src="images/office.jpg">
-                </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    <div class="background">
+                        <img src="images/office.jpg">
+                    </div>
+                    <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                    <a href="#name"><span class="white-text name">John Doe</span></a>
+                    <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
                 </div>
             </li>
             <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
@@ -42,24 +62,16 @@
             <li><a class="subheader">Subheader</a></li>
             <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
         </ul>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
                 
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
+
             var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems, options);
-            });
+            var instances = M.Sidenav.init(elems);
 
-            // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
-            // var collapsibleElem = document.querySelector('.collapsible');
-            // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
-
-            // Or with jQuery
-
-            $(document).ready(function(){
-            $('.sidenav').sidenav();
             });
         
         </script>

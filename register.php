@@ -24,19 +24,21 @@
 
 ?>
 
+   
+
 <body>
 
    <div class="container">
       <div class="row">
-         <div class="col s6 valign-wrapper">
+         <div class="col m6 hide-on-small-only valign-wrapper">
                <div class="logo">
                   
                   <h2 class="center-align">ServiceSet</h2>
-                  <h3>Here is where everything starts</h3>
+                  <h3 class="center-align">Here is where everything starts</h3>
                   
                </div>
          </div>
-         <div class="col s6 center-align container">
+         <div class="col s12 m6 center-align container">
 
                <h1>Register</h1>
 
@@ -72,7 +74,7 @@
                            <label for="confirm-password">Confirm password</label>
                         </div>
 
-                        <div class="col s6 left-align">
+                        <div class="col s6 left-align valign-wrapper" id="logIn">
                            <a href="login.php" class="black-text">or Log in</a>
                         </div>
 
