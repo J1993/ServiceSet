@@ -1,0 +1,58 @@
+ DROP DATABASE databasecms;
+
+CREATE DATABASE IF NOT EXISTS databasecms;
+
+USE databasecms;
+
+CREATE TABLE users (
+	user_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT ,
+	user_name VARCHAR(30),
+	user_lastName VARCHAR(50),
+	user_email VARCHAR(100) NOT NULL UNIQUE,
+	user_password VARCHAR(100) NOT NULL,
+	rol_id INT
+);
+
+CREATE TABLE categories (
+	category_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	category_name VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE articles (
+	article_id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	article_title VARCHAR(100),
+	article_resume VARCHAR(100),
+	article_content TEXT,
+	article_author INT,
+	article_date_posted DATE,
+	article_hour_posted TIME,
+	article_type CHAR(1),
+	article_category INT,
+	FOREIGN KEY (article_author) REFERENCES users(user_id),
+	FOREIGN KEY (article_category) REFERENCES categories(category_id)
+);
+
+
+INSERT INTO users (user_name, user_lastName, user_email, user_password)
+VALUES ('admin', 'admin', 'admin@serviceset.com', 'osloza020693', '1');
+INSERT INTO users (user_name, user_lastName, user_email, user_password)
+VALUES ('Jordy', 'Lopez', 'jordizeus93@gmail.com', 'osloza020693', '2');
+
+INSERT INTO articles (article_title, article_resume, article_content, article_author)
+VALUES ('Mi primer articulo', 'Resumen del articulo', 'Aqui vendra el contenido', '1');
+INSERT INTO articles (article_title, article_resume, article_content, article_author)
+VALUES ('Mi Segundo articulo', 'Resumen del articulo', 'Aqui vendra el contenido del segundo', '2');
+INSERT INTO articles (article_title, article_resume, article_content, article_author)
+VALUES ('Mi otro articulo', 'Resumen del articulo', 'Aqui vendra el contenido del otro', '1');
+INSERT INTO articles (article_title, article_resume, article_content, article_author)
+VALUES ('Mi otro articulo 2', 'Resumen del articulo', 'Aqui vendra el contenido del otro 2', '1');
+INSERT INTO articles (article_title, article_resume, article_content, article_author)
+VALUES ('Mi otro articulo 3', 'Resumen del articulo', 'Aqui vendra el contenido del otro 3', '1');
+
+INSERT INTO categories (category_name) VALUES ('General');
+INSERT INTO categories (category_name) VALUES ('Back-end');
+INSERT INTO categories (category_name) VALUES ('Fron-end');
+
+//Queries..............
+
+SELECT * FROM articles JOIN users ON article_author = user_id WHERE user_id = #;

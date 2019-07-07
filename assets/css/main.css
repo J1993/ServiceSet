@@ -1,0 +1,48 @@
+:root{
+    --color-white-100: #ffffff;
+    --color-black-100: #000000;
+    --color-black-75: #303030;
+    --color-grey-25: #eeeeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Exo 2', sans-serif;*/
+}
+.parallax { 
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.separator {
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    background-color: var(--color-white-100);
+}
+
+.separator-vertical {
+    display: inline-block;
+    width: 1px;
+    height: 30%;
+    background-color: var(--color-white-100);
+}
+
+.sectionTitle {
+    font-size: 42px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Exo 2', sans-serif;
+}

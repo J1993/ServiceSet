@@ -1,0 +1,115 @@
+.container {
+    height: 100% !important;
+    text-align: center !important;
+}
+.parallaxHeader { 
+    /* The image used */
+    background-image: url("/assets/images/alex-bachor-1324403-unsplash.jpg");
+}
+
+/*---------- Navigation Bar ------------*/
+.navBar {
+    padding-top: 20px;
+}
+
+.items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.items > li {
+    display: inline-block;
+    height: 21px;
+}
+
+.item-selected {
+    font-weight: 600;
+}
+
+.item, .item-selected {
+    display: block;
+    text-align: center;
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--color-white-100);
+} 
+
+.item:hover {
+    font-weight: 600;
+}
+/*----------End Navigation Bar ------------*/
+
+.logo {
+    margin-top: 200px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 3em;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+}
+
+.summary {
+    margin-top: 1.5%;
+    color: var(--color-white-100);
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.discover {
+    position: absolute;
+    color: var(--color-white-100);
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#expand-icon {
+    position: absolute;
+}
+
+.services {
+    background-color: var(--color-grey-25);
+    font-size:36px;
+}
+
+.serviceCard {
+    height: 300px;
+    padding: 0 5% !important;
+}
+
+#material-icon {
+    margin-top: 10px;
+    font-size: 40px !important;
+}
+
+.serviceTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.serviceSummary {
+    font-size: 16px;
+}
+
+.serviceButton {
+    background-color: var(--color-black-75) !important;
+}
+
+    .serviceButton:hover {
+        background-color: transparent !important;
+        color: var(--color-black-75);
+    }
+
+.parallaxWho {
+    background-image: url("/assets/images/meeting3.png");
+}
+
+.parallaxWhoTitle{
+    font-size: 42px;
+    color: var(--color-white-100);    
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
