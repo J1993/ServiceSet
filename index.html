@@ -19,6 +19,7 @@
     </head>
     <body onresize="screenResize()">
 
+        <!--***** Header *****-->
         <div class="parallax parallaxHeader">
 
             <div class="container">
@@ -48,6 +49,7 @@
 
         </div>
 
+        <!--***** Services *****-->
         <div class="services" id="services">
             
             <div class="container">
@@ -66,7 +68,7 @@
                                     web page with amazing features on
                                     require. </p>
 
-                            <a class="waves-effect btn serviceButton">Learn more...</a>
+                            <a class="waves-effect btn pageButton">Learn more...</a>
                         </div>
                         
                     </div>
@@ -84,7 +86,7 @@
                                     any device and perform the best
                                     result.</p>
 
-                            <a class="waves-effect btn serviceButton">Learn more...</a>
+                            <a class="waves-effect btn pageButton">Learn more...</a>
                         </div>
 
                     </div>
@@ -110,32 +112,128 @@
             </div>
         </div>
 
+        <!--***** Who we are *****-->
         <div class="parallax parallaxWho">
 
             <div class="container valign-wrapper">
 
-                <div class="row ">
-                    <h2 class="parallaxWhoTitle left">Who we are</h2>
+                <div class="row" id="whoTitleContainer">
 
-                    <div class="separator-vertical left"></div>
+                    <div class="col s12 m4">
+                        <h2 class="sectionTitleWhite" id="">Who we are</h2>
+                    </div>
     
-                    <p class="whoWeAre"><span>ServiceSet</span> is a small company created by
-                            professionals and students to develop
-                            the best websites and designs along the
-                            North East and abroad.
-                            
-                            Even though we are based at Gateshead but with
-                            lots of projects around Europe and Latin-America.
-                            
-                            We feel proud to always ensure the success of 
-                            every project and certainly be the one who can
-                            deliver and complete all the needs that you will need
-                            if we work together.</p>
+                    <div class="col s12 m8">
+                        <p class="whoWeAre"><span>ServiceSet</span> is a small company created by
+                                professionals and students to develop
+                                the best websites and designs along the
+                                North East and abroad.
+                                <br>
+                                <br>
+                                Even though we are based at Gateshead but with
+                                lots of projects around Europe and Latin-America.
+                                <br>
+                                <br>
+                                We feel proud to always ensure the success of 
+                                every project and certainly be the one who can
+                                deliver and complete all the needs that you will need
+                                if we work together.</p>
+                    </div>
                 </div>
                 
             </div>
 
         </div>
+
+        <!--***** Contact *****-->
+        <div class="contact">
+
+            <div class="row">
+             
+                <!-- Get in Touch Section-->
+                <div class="col s12 m5 getInTouch">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col s12">
+
+                                <h2 class="sectionTitleWhite">Get in Touch</h2>
+
+                                <p class="white-text"><i class="inline-icon material-icons">phone</i>+44 7492 040012</p>
+
+                                <p class="white-text"><i class="inline-icon material-icons">email</i>contact@serviceset.com</p>
+
+                                <div class="separator"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Get Free Quote Section-->
+                <div class="container col s12 m7 valign-wrapper getFreeQuote">
+
+                    <div class="row">
+
+                        <form class="col s12" id="form">
+
+                            <h2 class="sectionTitle">Get a free quote</h2>
+
+                            <div class="row">
+
+                                <div class="input-field col s12">
+
+                                    <input id="name" type="text" class="validate" required>
+                                    <label for="name">Name*</label>
+
+                                </div>
+                                <div class="input-field col s12">
+
+                                    <input id="phone" type="text" class="validate">
+                                    <label for="phone">Phone</label>
+
+                                </div>
+                                <div class="input-field col s12">
+
+                                        <input id="email" type="text" class="validate" required>
+                                        <label for="email">Email*</label>
+
+                                </div>
+                                <div class="input-field col s12">
+                                    <textarea id="textarea2" class="materialize-textarea" required></textarea>
+                                    <label for="textarea2">Message*</label>
+                                </div>
+                                <p class="checkboxForm">
+                                    <label>
+                                        <input type="checkbox" required/>
+                                        <span>By clicking, you accept the terms and conditions following our policy.</span>
+                                    </label>
+                                </p>
+                                <button class="btn waves-effect waves-light sendBtn pageButton" type="submit" name="action">Submit
+                                </button>
+                                
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--***** Footer *****-->
+        <div class="pie row valign-wrapper">
+            <div class="col s12 center-align">
+                <p class="white-text">&copy; 2019 ServiceSet. <a href="">Privacy</a>  & <a href="">Terms</a></p>
+            </div>
+        </div>
+
 
         <!--Own scripts-->
         <script src="assets/js/main.js"></script>

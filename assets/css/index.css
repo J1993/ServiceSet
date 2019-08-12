@@ -69,6 +69,7 @@
     position: absolute;
 }
 
+/************** Services **************/
 .services {
     background-color: var(--color-grey-25);
     font-size:36px;
@@ -85,31 +86,38 @@
 }
 
 .serviceTitle {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .serviceSummary {
-    font-size: 16px;
+    height: 130px;
+    font-size: 16.8px;
 }
-
-.serviceButton {
-    background-color: var(--color-black-75) !important;
-}
-
-    .serviceButton:hover {
-        background-color: transparent !important;
-        color: var(--color-black-75);
-    }
 
 .parallaxWho {
     background-image: url("/assets/images/meeting3.png");
 }
 
-.parallaxWhoTitle{
-    font-size: 42px;
-    color: var(--color-white-100);    
-    margin-top: 0;
-    padding-top: 20px;
-    font-family: 'Exo 2', sans-serif;
+#whoTitleContainer{
 }
+
+.whoWeAre {
+    font-size: 18px;
+    color: var(--color-white-100);
+}
+
+.whoWeAre > span {
+    font-size: 22px;
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+}
+
+.pie {
+    height: 60px;
+    margin-bottom: 0 !important;
+    background-color: var(--color-black-75);
+    
+}
+
+

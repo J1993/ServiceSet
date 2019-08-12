@@ -46,3 +46,96 @@ html, body {
     padding-top: 20px;
     font-family: 'Exo 2', sans-serif;
 }
+
+.sectionTitleWhite {
+    color: var(--color-white-100);
+    font-size: 42px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/*Contact section*/
+.contact {
+    margin: 0 !important;
+}
+
+.contact > .row {
+    margin-bottom: 0;
+}
+
+.getInTouch {
+    height: 500px !important;
+    background-color: var(--color-black-75); 
+}
+
+.getInTouch > div {
+    height: 300px;
+}
+
+.getInTouch > p{
+    font-size: 20px;     
+}
+
+.getInTouch  .row {
+    padding-top: 20%;
+}
+
+.inline-icon {
+    vertical-align: bottom !important;
+    font-size: 30px !important;
+}
+
+.getFreeQuote {
+    padding: 0 10% !important;
+}
+
+.input-field {
+    margin-bottom: 0 !important;   
+}
+
+#form > h2 {
+    margin-bottom: 0;
+}
+
+#form label{
+    width: 100px !important;
+}
+
+#textarea2 {
+    max-height: 90px !important; 
+    overflow-y: scroll;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: initial !important;
+    float: left;
+}
+
+.checkboxForm{
+    padding: 0 0.75rem;
+}
+
+
+[type="checkbox"]+span:not(.lever) {
+    font-size: 0.9rem !important
+    ;
+}
+
+[type="checkbox"]:checked+span:not(.lever):before{
+    border-right: 2px solid #000000 !important;
+    border-bottom: 2px solid #000000 !important;
+}
+
+.sendBtn {
+    margin-top: 5% !important;
+}
+
+.pageButton {
+    background-color: var(--color-black-75) !important;
+}
+
+    .pageButton:hover {
+        background-color: transparent !important;
+        color: var(--color-black-75);
+    }
