@@ -14,6 +14,7 @@ html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
     /*font-family: 'Exo 2', sans-serif;*/
+    scroll-behavior: smooth;
 }
 .parallax { 
     /* Full height */
@@ -45,6 +46,7 @@ html, body {
     margin-top: 0;
     padding-top: 20px;
     font-family: 'Exo 2', sans-serif;
+    text-align: center;
 }
 
 .sectionTitleWhite {
@@ -139,3 +141,5 @@ html, body {
         background-color: transparent !important;
         color: var(--color-black-75);
     }
+
+/* END Contact section*/

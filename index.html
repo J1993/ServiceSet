@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link href="https://fonts.googleapis.com/css?family=Exo+2|Roboto&display=swap" rel="stylesheet">
     </head>
+
     <body onresize="screenResize()">
 
         <!--***** Header *****-->
@@ -29,7 +30,7 @@
                     <ul class="items">
                         <li><a href="" class="item-selected">Home</a></li>
                         <li><a href="#services" class="item">Services</a></li>
-                        <li><a href="#" class="item">Contact Us</a></li>
+                        <li><a href="#contact" class="item">Contact Us</a></li>
                         <li><a href="#" class="item">About</a></li>
                     </ul>
                 </div>
@@ -68,7 +69,7 @@
                                     web page with amazing features on
                                     require. </p>
 
-                            <a class="waves-effect btn pageButton">Learn more...</a>
+                            <a class="waves-effect btn pageButton" href="web-design.html">Learn more...</a>
                         </div>
                         
                     </div>
@@ -115,9 +116,39 @@
         <!--***** Who we are *****-->
         <div class="parallax parallaxWho">
 
-            <div class="container valign-wrapper">
+            <!--Mobile-->
+            <div class="container hide-on-med-and-up show-on-small whoWeAreMobile">
 
-                <div class="row" id="whoTitleContainer">
+                <div class="row">
+
+                    <div class="col s12">
+                        <h2 class="sectionTitleWhite">Who we are</h2>
+                    </div>
+    
+                    <div class="col s12 ">
+                        <p class="whoWeAre"><span>ServiceSet</span> is a small company created by
+                                professionals and students to develop
+                                the best websites and designs along the
+                                North East and abroad.
+                                <br>
+                                <br>
+                                Even though we are based at Gateshead but with
+                                lots of projects around Europe and Latin-America.
+                                <br>
+                                <br>
+                                We feel proud to always ensure the success of 
+                                every project and certainly be the one who can
+                                deliver and complete all the needs that you will need
+                                if we work together.</p>
+                    </div>
+                </div>
+                
+            </div><!--END Mobile-->
+
+            <!--Medium and Desktop-->
+            <div class="container hide-on-small-only show-on-medium-and-up">
+
+                <div class="row valign-wrapper" id="whoWeAreContainer">
 
                     <div class="col s12 m4">
                         <h2 class="sectionTitleWhite" id="">Who we are</h2>
@@ -136,17 +167,17 @@
                                 <br>
                                 We feel proud to always ensure the success of 
                                 every project and certainly be the one who can
-                                deliver and complete all the needs that you will need
-                                if we work together.</p>
+                                deliver and complete all the needs if we work together.</p>
                     </div>
+
                 </div>
-                
-            </div>
+
+            </div><!--END Medium and Desktop-->
 
         </div>
 
         <!--***** Contact *****-->
-        <div class="contact">
+        <div class="contact" id="contact">
 
             <div class="row">
              
@@ -155,18 +186,40 @@
 
                     <div class="container">
 
-                        <div class="row">
-                            <div class="col s12">
+                        <div class="row ">
+
+                            <div class="col s12 white-text center-align">
 
                                 <h2 class="sectionTitleWhite">Get in Touch</h2>
 
-                                <p class="white-text"><i class="inline-icon material-icons">phone</i>+44 7492 040012</p>
+                                <div class="row getInTouchItem">
+                                    <div class="col s2 offset-s1"><i class="inline-icon material-icons">phone</i></div>
+                                    <div class="col s8"><p class="left">+44 7492 040012 (UK)</p></div>
+                                </div>
 
-                                <p class="white-text"><i class="inline-icon material-icons">email</i>contact@serviceset.com</p>
-
+                                <div class="row getInTouchItem">
+                                    <div class="col s2 offset-s1"><i class="inline-icon material-icons">email</i></div>
+                                    <div class="col s8"><p class="left">contact@serviceset.com</p></div>
+                                </div>
+                                
                                 <div class="separator"></div>
 
+                                <div class="row getInTouchItem">
+                                    <div class="col s2 offset-s2">
+                                        <a href="https://www.instagram.com/serviceset.dev" target="_blank"><img src="assets/images/instagram-with-circle.png" alt=""></a>
+                                    </div>
+
+                                    <div class="col s2 offset-s1">
+                                        <a href="" target="_blank"><img src="assets/images/facebook-with-circle.png" alt=""></a>
+                                    </div>
+
+                                    <div class="col s2 offset-s1">
+                                        <a href="" target="_blank"><img src="assets/images/youtube-with-circle.png" alt=""></a>
+                                    </div>
+                                </div>
+
                             </div>
+
                         </div>
 
                     </div>
@@ -178,7 +231,7 @@
 
                     <div class="row">
 
-                        <form class="col s12" id="form">
+                        <form class="col s12" id="form" action="assets/php/email.php" method="POST">
 
                             <h2 class="sectionTitle">Get a free quote</h2>
 
@@ -186,24 +239,24 @@
 
                                 <div class="input-field col s12">
 
-                                    <input id="name" type="text" class="validate" required>
+                                    <input id="name" type="text" class="validate" name="name" required>
                                     <label for="name">Name*</label>
 
                                 </div>
                                 <div class="input-field col s12">
 
-                                    <input id="phone" type="text" class="validate">
+                                    <input id="phone" type="text" class="validate" name="phone">
                                     <label for="phone">Phone</label>
 
                                 </div>
                                 <div class="input-field col s12">
 
-                                        <input id="email" type="text" class="validate" required>
+                                        <input id="email" type="text" class="validate" name="email" required>
                                         <label for="email">Email*</label>
 
                                 </div>
                                 <div class="input-field col s12">
-                                    <textarea id="textarea2" class="materialize-textarea" required></textarea>
+                                    <textarea id="textarea2" class="materialize-textarea" name="message" required></textarea>
                                     <label for="textarea2">Message*</label>
                                 </div>
                                 <p class="checkboxForm">
@@ -230,7 +283,7 @@
         <!--***** Footer *****-->
         <div class="pie row valign-wrapper">
             <div class="col s12 center-align">
-                <p class="white-text">&copy; 2019 ServiceSet. <a href="">Privacy</a>  & <a href="">Terms</a></p>
+                <p class="white-text">&copy; 2019 ServiceSet. <a href="">Blog</a></p>
             </div>
         </div>
 

@@ -4,10 +4,10 @@
 }
 .parallaxHeader { 
     /* The image used */
-    background-image: url("/assets/images/alex-bachor-1324403-unsplash.jpg");
+    background-image: url("/assets/images/index-background.jpg");
 }
 
-/*---------- Navigation Bar ------------*/
+/*---------- Navigation Bar for INDEX ------------*/
 .navBar {
     padding-top: 20px;
 }
@@ -40,7 +40,7 @@
 .item:hover {
     font-weight: 600;
 }
-/*----------End Navigation Bar ------------*/
+/*---------- END Navigation Bar for INDEX ------------*/
 
 .logo {
     margin-top: 200px;
@@ -71,13 +71,14 @@
 
 /************** Services **************/
 .services {
+    padding-bottom: 3%;
     background-color: var(--color-grey-25);
     font-size:36px;
 }
 
 .serviceCard {
-    height: 300px;
-    padding: 0 5% !important;
+    height: 350px;
+    padding: 0 5% 1% 5% !important;
 }
 
 #material-icon {
@@ -91,15 +92,23 @@
 }
 
 .serviceSummary {
-    height: 130px;
+    height: 190px;
+    padding-top: 5%;
     font-size: 16.8px;
 }
+/**************END Services **************/
 
+/************** Who we are **************/
 .parallaxWho {
     background-image: url("/assets/images/meeting3.png");
 }
 
-#whoTitleContainer{
+.whoWeAreMobile  .sectionTitleWhite{
+    padding-top: 25% !important;
+}
+
+#whoWeAreContainer {
+    padding-top: 25% !important;
 }
 
 .whoWeAre {
@@ -112,6 +121,23 @@
     font-family: 'Exo 2', sans-serif;
     font-style: italic;
 }
+/************** END Who we are **************/
+
+/************** Get in Touch **************/
+.getInTouchItem{
+    padding-top: 0 !important;
+}
+
+.getInTouchItem  p {
+    padding-top: 1.5% !important;
+    font-size: 18px;
+}
+
+.getInTouch  .separator {
+    width: 90% !important;
+    margin: 5%;
+}
+/************** END Who we are **************/
 
 .pie {
     height: 60px;
